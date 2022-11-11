@@ -753,6 +753,16 @@ transition-property: fill;
         color: #212121;
 }
 
+.input-label{
+    display: block;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 0.86;
+        letter-spacing: 0.01em;
+        color: #757575;
+        margin-bottom: 4px;
+}
+
 .modal-input{
     width: 100%;
     height: 40px;
@@ -790,4 +800,7 @@ transition-property: fill;
         transition-duration: var(--main-trans-duration);
         transition-timing-function: var(--main-trans-timing-func);
     }
-}
+
+    .modal-text{
+        width: 100%;
+    }
