@@ -518,6 +518,10 @@ transition-property: fill;
     margin-right: 70px;
  }
 
+ .footer-soc-container{
+    margin-right: 93px;
+ }
+
 .soc-container-text {
     font-weight: 700;
         line-height: 16px;
@@ -530,7 +534,6 @@ transition-property: fill;
     display: flex;
     justify-content: center;
     gap: 10px;
-    
  }
 
 
@@ -562,7 +565,82 @@ align-items: center;
  }
 
 
+.footer-sub-title{
+    font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+margin-bottom: 20px;
+}
 
+.footer-sub-input{
+    width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        margin-right: 12px;
+            transition-property: border-color;
+                transition-duration: var(--main-trans-duration);
+                transition-timing-function: var(--main-trans-timing-func);
+}
+
+.footer-sub-wrep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-sub-input::placeholder{
+    padding-left: 16px;
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-sub-input:focus {
+    border-color: var(--accent-color);
+}
+
+ .footer-sub-btn{
+    font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        width: 200px;
+        height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+padding-left: 28px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background: #2196F3;
+        border: none;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            transition-property: background-color;
+                transition-duration: var(--main-trans-duration);
+                transition-timing-function: var(--main-trans-timing-func);
+ }
+
+ .footer-sub-btn:focus{
+    background-color: #188CE8;
+ }
+ 
+.footer-sub-send{
+    position: relative;
+}
+
+.footer-sub-icon{
+    position: absolute;
+    bottom: 12px;
+right: 35px;
+}
 
  /* ------------PORTFOLIO-------- */
  .current {
@@ -852,7 +930,9 @@ font-size: 12px;
         justify-content: center;
         margin-right: 7px;
         fill: transparent;
-        
+        transition-property: border-color;
+            transition-duration: var(--main-trans-duration);
+            transition-timing-function: var(--main-trans-timing-func);
 }
 
 .input-check:checked + .check-text span {
@@ -861,7 +941,7 @@ font-size: 12px;
     fill: #FFFFFF;
 }
 
-.input-check:focus +.check-text span {
+.input-check:focus + .check-text span {
 border-color: var(--accent-color);}
 
 .check-link::after{
