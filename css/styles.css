@@ -587,7 +587,6 @@ margin-bottom: 20px;
 }
 
 .footer-sub-form{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -616,7 +615,7 @@ margin-bottom: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
 padding-left: 28px;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
@@ -630,19 +629,15 @@ padding-left: 28px;
                 transition-timing-function: var(--main-trans-timing-func);
  }
 
+.footer-sub-icon{
+    margin-left: 10px;
+}
+
  .footer-sub-btn:focus{
     background-color: #188CE8;
  }
  
-.footer-sub-send{
-    position: relative;
-}
 
-.footer-sub-icon{
-    position: absolute;
-    bottom: 12px;
-right: 35px;
-}
 
  /* ------------PORTFOLIO-------- */
  .current {
